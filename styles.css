@@ -27,9 +27,9 @@ body {
 .header__nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  flex-basis: 17.5rem;
+  flex-basis: 20rem;
   margin-left: 2rem;
 }
 
@@ -44,6 +44,51 @@ body {
 
 .header__link:hover {
   text-decoration: underline;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.intro__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro__heading {
+  max-width: 20rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.intro__button {
+  user-select: none;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  border: 0.15rem solid #000000;
+  border-radius: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  transition: 0.25s;
+}
+
+.intro__button:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+.intro__img {
+  width: 100%;
+  max-width: 65rem;
 }
 
 .footer {
