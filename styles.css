@@ -111,6 +111,68 @@ body {
   width: 10rem;
 }
 
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 3.5rem;
+}
+
+.newsletter__heading {
+  text-align: center;
+  margin: 0;
+}
+
+.newsletter__paragraph {
+  text-align: center;
+  max-width: 25rem;
+  margin-bottom: 2rem;
+}
+
+.newsletter__form {
+  width: 100%;
+}
+
+.newsletter__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.newsletter__input {
+  width: 100%;
+  max-width: 15rem;
+  border: 0.1rem solid #808080;
+  border-radius: 0.5rem;
+  outline-color: #000000;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.newsletter__input::placeholder {
+  opacity: 0.6;
+}
+
+.newsletter__button {
+  user-select: none;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  border: 0.15rem solid #000000;
+  border-radius: 1.5rem;
+  padding: 0.75rem 2.5rem;
+  transition: 0.25s;
+}
+
+.newsletter__button:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
 .footer {
   width: 100%;
   background-color: #000000;
