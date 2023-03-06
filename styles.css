@@ -159,6 +159,7 @@ body {
 }
 
 .gallery__img {
+  user-select: none;
   width: 10rem;
 }
 
@@ -260,6 +261,90 @@ body {
 
 .footer__link:hover {
   text-decoration: underline;
+}
+
+.planets {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 2rem 5rem;
+}
+
+.planets__heading {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 1.85rem;
+  line-height: 2rem;
+  margin-bottom: 3.6rem;
+}
+
+.planets__table {
+  text-align: center;
+  width: 100%;
+  max-width: 70rem;
+  background-color: #000000;
+  border-radius: 1rem;
+}
+
+.planets__table td {
+  padding: 1rem;
+}
+
+.planets__img {
+  user-select: none;
+  width: 35vw;
+  max-width: 25rem;
+}
+
+.planets__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10.5rem;
+}
+
+.planets__name {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  text-decoration: overline underline;
+  text-underline-offset: 0.625rem;
+  margin: 0 0 1.25rem 0;
+}
+
+.planets__info {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.975rem;
+  line-height: 1rem;
+  margin: 0.425rem 0;
+}
+
+.planets__info_label {
+  font-weight: 500;
+}
+
+.planets__button {
+  user-select: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 0.15rem solid #ffffff;
+  border-radius: 1.5rem;
+  padding: 0.75rem 2rem;
+  margin-top: 1.5rem;
+  transition: 0.25s;
+}
+
+.planets__button:hover {
+  background-color: transparent;
+  color: #ffffff;
 }
 
 @media (max-width: 950px) {
