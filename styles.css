@@ -171,9 +171,39 @@ body {
   padding: 5rem 0;
 }
 
-.gallery__img {
+.gallery__img_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   user-select: none;
+  cursor: pointer;
+}
+
+.gallery__img_box:hover .gallery__img_label {
+  opacity: 1;
+}
+
+.gallery__img_box:hover .gallery__img {
+  opacity: 0.5;
+}
+
+.gallery__img {
   width: 10rem;
+  transition: 0.25s ease-in-out;
+}
+
+.gallery__img_label {
+  opacity: 0;
+  position: absolute;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  text-decoration: overline underline;
+  text-underline-offset: 0.55rem;
+  transition: 0.25s ease-in-out;
 }
 
 .newsletter {
