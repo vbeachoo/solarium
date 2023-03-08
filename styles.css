@@ -119,6 +119,7 @@ body {
 }
 
 .intro__button {
+  all: unset;
   user-select: none;
   cursor: pointer;
   background-color: #000000;
@@ -217,6 +218,7 @@ body {
 }
 
 .newsletter__button {
+  all: unset;
   user-select: none;
   cursor: pointer;
   background-color: #000000;
@@ -328,6 +330,7 @@ body {
 }
 
 .planets__button {
+  all: unset;
   user-select: none;
   cursor: pointer;
   background-color: #ffffff;
