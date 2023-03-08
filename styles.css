@@ -34,18 +34,30 @@ body {
 }
 
 .header__link {
+  position: relative;
   user-select: none;
   cursor: pointer;
   text-align: center;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  text-underline-offset: 0.5rem;
   margin: 0;
 }
 
-.header__link:hover {
-  text-decoration: underline;
+.header__link:after {
+  position: absolute;
+  top: 1.375rem;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 0.15rem;
+  cursor: auto;
+  background-color: #ffffff;
+  transition: 0.25s ease-in-out;
+}
+
+.header__link:hover:after {
+  width: 100%;
 }
 
 .header__dropdown {
@@ -250,19 +262,30 @@ body {
 }
 
 .footer__link {
+  position: relative;
   user-select: none;
   cursor: pointer;
   text-align: center;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
-  line-height: 1.75rem;
   text-decoration: none;
-  text-underline-offset: 0.5rem;
   margin: 0;
 }
 
-.footer__link:hover {
-  text-decoration: underline;
+.footer__link:after {
+  position: absolute;
+  top: 1.375rem;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 0.15rem;
+  cursor: auto;
+  background-color: #ffffff;
+  transition: 0.25s ease-in-out;
+}
+
+.footer__link:hover:after {
+  width: 100%;
 }
 
 .planets {
